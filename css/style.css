@@ -598,11 +598,15 @@ p {
 
 /* section 9  */
 .cta-section {
-  background: linear-gradient(90deg, #F37047 0%, #FAB87D 100%);
+  background-image: url('../images/cta.png');
+  /* background: linear-gradient(90deg, #F37047 0%, #FAB87D 100%); */
   color: #000;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .cta-section h2 {
@@ -1040,7 +1044,7 @@ letter-spacing: 0%;
 .quote-icon {
   width: 94px;
   height: 94px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.08);
 }
 
 .z-1 {
@@ -1111,6 +1115,9 @@ letter-spacing: 0%;
 
 
 /* ---value----- */
+.value-container{
+  padding-top: 200px;
+}
 .left-img{
   /* background-image: url('../images/valuefullimg.jpg'); */
   background-image: url('../images/valueimg.png');
@@ -1255,6 +1262,7 @@ line-height: 88px;
 letter-spacing: -3px;
 text-align: center;
 margin-top: 100px;
+margin-bottom: 24px;
     }
     .video-bg p{
       color: #5E5E5E;
