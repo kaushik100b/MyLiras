@@ -7,18 +7,19 @@ body {
 
 /* Base Style */
 .hero-section {
-  min-height: 800px;
+  /* min-height: 900px; */
   position: relative;
   /* display: flex; */
   background-image: url('../images/hero-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   margin-bottom: 40px;
-  /* background-position: center center; */
+  /* background-position: top center; */
 }
 
 .hero-section .container {
-  margin-bottom: 400px;
+  min-height: 100vh;
+  margin-top: 20px;
   margin-bottom: 0px; 
     display: flex;
     justify-content: center;
@@ -27,8 +28,8 @@ body {
 /* Tablet View */
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 500px;
-    background-size: contain;
+    min-height: 550px;
+    background-size: cover;
     background-position: center top;
   }
 
@@ -44,7 +45,7 @@ body {
 /* Mobile View */
 @media (max-width: 480px) {
   .hero-section {
-    min-height: 700px;
+    min-height: 550px;
     background-size: cover;
     background-position: center top;
   }
@@ -59,11 +60,12 @@ body {
 }
 
 /* XXL Desktop View */
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .hero-section {
-    min-height: 800px; /* Adjust height if needed */
-    background-size: contain; /* Fill more area on large screens */
+    min-height: 120vh; /* Adjust height if needed */
+    background-size: cover; /* Fill more area on large screens */
     background-position: top center;
+    width: 100%;
   }
 
   .hero-section .container {
@@ -140,8 +142,8 @@ p {
 
 .hero-header {
   font-weight: 700;
-  font-size: 75px;
-  line-height: 80px;
+  font-size: 70px;
+  line-height: 75px;
   letter-spacing: 0px;
   color: #101320;
 }
@@ -167,8 +169,8 @@ p {
 
 /* Container */
 .toggler-icon {
-  width: 30px;
-  height: 24px;
+  width: 20px;
+  height: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -315,32 +317,40 @@ p {
 }
 
 .earn-section {
-  background-image: url('../images/section2bg.jpg');
+  /* background-image: url('../images/section2bg.jpg'); */
   border-radius: 16px;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  min-height: 800px; /* Adjust height if needed */
-    background-size: contain; /* Fill more area on large screens */
-    background-position: top center;
+  /* min-height: 800px; Adjust height if needed */
+    background-size: cover; /* Fill more area on large screens */
+    background-position: bottom center;
   color: #000;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   /* overflow: hidden; */
 }
 
 .earn-section .container {
-  padding-bottom: 150px;
+  min-height: 100vh;
 }
 
-.earn-section h3 {
-  font-weight: 200;
-  font-size: 75px;
-  line-height: 80px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #FF511A;
+.earn-section h2 {
+  width: 75%;
+font-weight: 600;
+font-size: 42px;
+line-height: 50px;
+letter-spacing: 0px;
+text-align: center;
+
+}
+.s2img{
+  width: 1194px;
+height: 645px;
+border-radius: 16px;
+
 }
 
 /* iPad Air (820px width) */
@@ -380,7 +390,8 @@ p {
 /* Mobile (≤480px) */
 @media (max-width: 480px) {
   .earn-section {
-    height: auto;
+    min-height: 450px;
+    /* height: auto; */
     padding: 60px 0px;
     background-size: cover;
     background-position: bottom;
@@ -566,9 +577,9 @@ p {
 
 .how-it-works-box p {
   display: flex;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
   letter-spacing: 0%;
   color: #fff;
   margin-bottom: 0;
@@ -663,7 +674,7 @@ p {
 
 .top-creators {
   background-image: url('../images/Top\ Creators\ &\ Real\ Campaigns\ That\ Work.png');
-  min-height: 900px;
+  min-height: 120vh;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -917,6 +928,7 @@ p {
 .featured .list-unstyled {
   background-color: #EF4915;
   padding: 40px 25px;
+  border-radius: 6px;
 }
 
 .benefits {
@@ -926,6 +938,7 @@ p {
 .benefits .list-unstyled {
   background-color: #B02A00;
   padding: 40px 25px;
+  border-radius: 6px;
 }
 
 .card-box h5 {
@@ -933,8 +946,8 @@ p {
 }
 
 .featured ul li {
-font-weight: 500;
-font-size: 24px;
+font-weight: 400;
+font-size: 20px;
 line-height: 25px;
 letter-spacing: 0%;
   background: #FF511A;
@@ -946,8 +959,8 @@ letter-spacing: 0%;
   display: inline-block;
 }
 .benefits ul li {
-font-weight: 500;
-font-size: 24px;
+font-weight: 400;
+font-size: 20px;
 line-height: 25px;
 letter-spacing: 0%;
   background: #C73000;
@@ -1016,11 +1029,15 @@ text-align: center;
 text-transform: capitalize;
 color: #0A102A;
 }
-.testimonial-section img{
+.testimonial-section .user{
   width: 64px;
 height: 64px;
 border-radius: 99px;
 margin: auto;
+}
+.testimonial-section .quote{
+  width: 30px;
+height: 24px;
 }
 .testimonial-section strong{
 font-weight: 600;
@@ -1036,10 +1053,10 @@ line-height: 25px;
 letter-spacing: 0%;
 
 }
-.star{
-  color: #FF511A;
-  font-size: 25px;
-
+.star img{
+  width: 26px !important;
+height: 25px;
+margin: 2px;
 }
 
 .quote-icon {
@@ -1238,8 +1255,8 @@ letter-spacing: 0%;
 /* ========footer============= */
  .video-bg {
       position: relative;
-      /* height: 100vh; */
-      height: 1000px;
+      height: 100vh;
+      /* height: 1000px; */
       overflow: hidden;
       color: white;
       background-image: url('../images/footerbg.png');
@@ -1257,10 +1274,10 @@ letter-spacing: 0%;
     }
 
     .video-bg h1{
-font-weight: 500;
-font-size: 80px;
-line-height: 88px;
-letter-spacing: -3px;
+font-weight: 400;
+    font-size: 75px;
+    line-height: 86px;
+    letter-spacing: -2px;
 text-align: center;
 margin-top: 100px;
 margin-bottom: 24px;
@@ -1282,10 +1299,10 @@ text-align: center;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       text-align: center;
-      padding: 40px 20px;
+      padding: 0px 20px;
     }
 
     .cta-button {
