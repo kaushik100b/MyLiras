@@ -1255,7 +1255,7 @@ margin: 2px;
 /* ========footer============= */
  .video-bg {
       position: relative;
-      height: 100vh;
+      height: 120vh;
       /* height: 1000px; */
       overflow: hidden;
       color: white;
@@ -1275,8 +1275,8 @@ margin: 2px;
 
     .video-bg h1{
 font-weight: 400;
-    font-size: 75px;
-    line-height: 86px;
+    font-size: 65px;
+    line-height: 70px;
     letter-spacing: -2px;
 text-align: center;
 margin-top: 100px;
@@ -1302,7 +1302,7 @@ text-align: center;
       justify-content: space-evenly;
       align-items: center;
       text-align: center;
-      padding: 0px 20px;
+      padding: 40px 20px;
     }
 
     .cta-button {
