@@ -13,6 +13,7 @@ body {
   background-image: url('../images/hero-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  margin-bottom: 40px;
   /* background-position: center center; */
 }
 
