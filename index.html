@@ -13,6 +13,59 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link href="./css/style.css" rel="stylesheet">
+
+  <style>
+    
+.button--mimas {
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.05rem; */
+    /* font-weight: 700; */
+    /* font-size: 0.85rem; */
+    /* border-radius: 0.5rem; */
+    overflow: hidden;
+    color: #fff;
+    /* background: #e7e7e7; */
+}
+.button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    /* padding: 1.5rem 3rem; */
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+.button--mimas::before {
+    content: '';
+    background: #FF511A;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.6s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button::before, .button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 130%;
+}
+
+.button--mimas span {
+	position: relative;
+   color: #ffffff;
+}
+
+
+.button--mimas:hover::before {
+	transform: translate3d(100%,0,0);
+}
+  </style>
 </head>
 <body>
 
@@ -33,7 +86,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav me-3">
             <li class="nav-item"><a class="text-dark nav-link active" href="./index.html">Home</a></li>
-            <li class="nav-item"><a class="text-dark nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="text-dark nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="text-dark nav-link" href="#">Privacy</a></li>
             <li class="nav-item"><a class="text-dark nav-link" href="#">Products</a></li>
             <li class="nav-item d-block d-lg-none m-3 m-lg-0"><a class="btn btn-dark rounded-pill" href="./signup.html">Sign Up</a>
@@ -59,15 +112,13 @@
           Simply post ads through our easy-to-use platform, and we handle the rest –
           traffic, tracking, and payouts.
         </p>
-        <a href="#" class="btn btn-danger mt-3">
-          Check Cash Available to Earn Now!
-        </a>
+        <button href="#" class="btn btn-danger mt-3 button button--mimas text-white">
+          <span class="text-white">Check Cash Available to Earn Now!</span>
+        </button>
       </div>
     </div>
   </div>
 </section>
-
-
 
   <!-- Section 2  -->
   <div class="container pt-lg-5">
@@ -84,21 +135,21 @@
   </div>
 
   <!-- Section 3  -->
-  <section class="partners-section py-5">
-    <div class="container rounded">
+  <section class="partners-section container py-5">
+    <div class="container rounded ">
       <div class="row align-items-center justify-content-center">
         <div class="col-12 col-md-3 mb-3 mb-md-0">
           <h5 class="trusted-text mb-0 text-center text-md-start">Trusted by Top Brands</h5>
         </div>
         <div class="col-12 col-md-9 mt-5 mt-sm-0">
-          <div class="d-flex flex-wrap flex-column flex-sm-row justify-content-between gap-5 gap-sm-4 partner-logos">
-            <img src="images/square-logo.svg" alt="Square" class="partner-logo">
-            <img src="images/square-logo.svg" alt="Square" class="partner-logo">
-            <img src="images/stripe-logo.svg" alt="Stripe" class="partner-logo">
-            <img src="images/gusto-logo.svg" alt="Gusto" class="partner-logo">
-            <img src="images/wordpress-logo.svg" alt="WordPress" class="partner-logo">
-          </div>
-        </div>
+  <div class="owl-carousel owl-theme partner-carousel">
+    <div class="item"><img src="images/square-logo.svg" alt="Square" class="partner-logo"></div>
+    <div class="item"><img src="images/square-logo.svg" alt="Square" class="partner-logo"></div>
+    <div class="item"><img src="images/stripe-logo.svg" alt="Stripe" class="partner-logo"></div>
+    <div class="item"><img src="images/gusto-logo.svg" alt="Gusto" class="partner-logo"></div>
+    <div class="item"><img src="images/wordpress-logo.svg" alt="WordPress" class="partner-logo"></div>
+  </div>
+</div>
       </div>
     </div>
   </section>
@@ -189,44 +240,52 @@
       <div class="row justify-content-center my-lg-5 g-4 mb-5">
         <!-- Creator Card 1 -->
         <div class="col-lg-6 col-xl-3">
-          <div class="creator-card p-2 text-center">
-            <img src="./images/creator1.png" alt="@lifestylebyria" class="creator-img mb-2">
+          <div class="creator-card text-center">
+            <div class="d-flex justify-content-center gap-3 align-items-center d-sm-block mb-3">
+              <img src="./images/creator1.png" alt="@lifestylebyria" class="creator-img mb-2">
             <p class="handle">@lifestylebyria</p>
+            </div>
             <div class="d-flex justify-content-center gap-2">
-              <div class="stats me-3 me-lg-0"><span>45K</span><br><small>Followers</small></div>
+              <div class="stats me-lg-0"><span>45K</span><br><small>Followers</small></div>
               <div class="stats"><span>12%</span> <br><small>Engagement</small></div>
             </div>
           </div>
         </div>
         <!-- Creator Card 2 -->
         <div class="col-lg-6 col-xl-3">
-          <div class="creator-card p-2 text-center">
+          <div class="creator-card text-center">
+            <div class="d-flex justify-content-center gap-3 align-items-center d-sm-block mb-3">
             <img src="./images/creator2.png" alt="@techie.sam" class="creator-img mb-2">
             <p class="handle">@techie.sam</p>
+            </div>
             <div class="d-flex justify-content-center gap-2">
-              <div class="stats me-3 me-lg-0"><span>28K</span><br><small>Followers</small></div>
+              <div class="stats me-lg-0"><span>28K</span><br><small>Followers</small></div>
               <div class="stats"><span>9%</span> <br><small>Engagement</small></div>
             </div>
           </div>
         </div>
         <!-- Creator Card 3 -->
         <div class="col-lg-6 col-xl-3">
-          <div class="creator-card p-2 text-center">
+          <div class="creator-card text-center">
+            <div class="d-flex justify-content-center gap-3 align-items-center d-sm-block mb-3">
             <img src="./images/creator3.png" alt="@janeworld" class="creator-img mb-2">
             <p class="handle">@janeworld</p>
+            </div>
             <div class="d-flex justify-content-center gap-2">
-              <div class="stats me-3 me-lg-0"><span>45K</span><br><small>Followers</small></div>
+              <div class="stats me-lg-0"><span>45K</span><br><small>Followers</small></div>
               <div class="stats"><span>12%</span> <br><small>Engagement</small></div>
             </div>
           </div>
         </div>
         <!-- Creator Card 4 -->
         <div class="col-lg-6 col-xl-3">
-          <div class="creator-card p-2 text-center">
+          <div class="creator-card text-center">
+            <div class="d-flex justify-content-center gap-3 align-items-center d-sm-block mb-3">
             <img src="./images/creator4.png" alt="@maddycreates" class="creator-img mb-2">
             <p class="handle">@maddycreates</p>
+            </div>
             <div class="d-flex justify-content-center gap-2">
-              <div class="stats me-3 me-lg-0"><span>28K</span><br><small>Followers</small></div>
+              <div class="stats me-lg-0"><span>28K</span><br><small>Followers</small></div>
               <div class="stats"><span>9%</span> <br><small>Engagement</small></div>
 
             </div>
@@ -415,7 +474,7 @@
       <!-- Right Side: Feature Boxes -->
       <!-- <div class="col-lg-12"> -->
         <div class="row gy-lg-2">
-          <div class="col-lg-12 d-block d-lg-none p-3 ">
+          <div class="col-lg-12 d-block d-lg-none px-5 ">
             <img src="./images/valuefullimg.jpg" alt="" class="img-fluid value-full-img rounded-4">
           </div>
           
