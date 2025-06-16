@@ -2092,9 +2092,9 @@ color: #24171E;
 
 .why-choose-us{
   background-image: url('../images/Why\ Choose\ MyLiras_.png');
-  background-size: contain;
+  background-size: contain ;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
