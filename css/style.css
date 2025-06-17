@@ -2077,13 +2077,13 @@ vertical-align: middle;
   .who-we-are h1 {
     font-size: 26px;
     line-height: 32px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   .who-we-are p {
     font-size: 14px;
     line-height: 1.7;
-    width: 100%;
+    width: 90%;
     margin: 0px;
   }
 }
@@ -2254,12 +2254,10 @@ height: 116px;
 
 
 /* === Base Styles === */
-.boy-div{
-  min-height: 140vh;
-}
+
 .about-work {
   background-image: url('../images/Top Creators & Real Campaigns That Work.png');
-  min-height: 120vh;
+  min-height: 100vh;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2268,7 +2266,7 @@ height: 116px;
 }
 
 .about-work .container {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .glow-card .img-div {
@@ -2276,13 +2274,13 @@ height: 116px;
   height: 100%;
   display: block;
   position: absolute;
-  bottom: -200px;
+  bottom: -30%;
 }
 
 .glow-card .img-div img {
   width: 100%;
   max-width: 1220px;
-  height: auto;
+  height: 100%;
 }
 
 .how-it-works-about h2 {
@@ -2290,7 +2288,7 @@ height: 116px;
   font-size: 45px;
   line-height: 50px;
   text-align: center;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   color: #101320;
 }
 
@@ -2306,7 +2304,10 @@ height: 116px;
 }
 
 /* === Small Mobile (320px - 480px) === */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 389px) {
+  .boy-div{
+    min-height: 60vh;
+  }
   .about-work {
     background-size: cover;
     min-height: 45vh;
@@ -2335,24 +2336,25 @@ height: 116px;
     min-width: 100%;
     height: auto;
             position: absolute;
-        bottom: -20%;
+        bottom: -35%;
         right: 0%;
     }
   }
 
 
 /* === Large Mobile (481px - 767px) === */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 390px) and (max-width: 767px) {
   .about-work {
     background-size: cover;
-    min-height: 110vh;
+    min-height: 50vh;
     padding-top: 70px;
+    margin-top: 90px;
   }
 
   .how-it-works-about h2 {
     font-size: 30px;
     line-height: 36px;
-    margin-top: 90px;
+    
   }
 
   .how-it-works-about p {
@@ -2369,6 +2371,9 @@ height: 116px;
   .glow-card .img-div img {
     min-width: 100%;
     height: auto;
+     position: absolute;
+        bottom: -20%;
+        right: 0%;
   }
 }
 
@@ -2406,6 +2411,9 @@ height: 116px;
 
 /* === Large Tablet / Small Laptop (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
+      .boy-div{
+  min-height: 140vh;
+}
   .about-work {
     min-height: 200vh;
     background-size: cover;
@@ -2431,8 +2439,11 @@ height: 116px;
 
 /* === Laptops (1200px - 1399px) === */
 @media (min-width: 1200px) and (max-width: 1399px) {
+    .boy-div{
+  min-height: 140vh;
+}
   .about-work {
-    min-height: 200vh;
+    min-height: 140vh;
     background-size: cover;
     padding-top: 60px;
   }
@@ -2445,11 +2456,18 @@ height: 116px;
     font-size: 20px;
     width: 75%;
   }
+  /* .glow-card .img-div img {
+    width: 100%;
+    height: auto;
+  } */
   
 }
 
 /* === Large Desktops (1400px and up) === */
 @media (min-width: 1400px) {
+    .boy-div{
+  min-height: 140vh;
+}
   .about-work {
     min-height: 100vh;
     background-size: cover;
@@ -2473,184 +2491,92 @@ height: 116px;
   } */
 }
 
-/* === iPad Pro Portrait (1024 x 1366) === */
-@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) {
-  .about-work {
-    background-position: top center;
-    padding-top: 0px;
-    min-height: 55vh;
-  }
-
-  .how-it-works-about h2 {
-    font-size: 42px;
-    margin-top: 0px;
-  }
-
-  .how-it-works-about p {
-    font-size: 20px;
-    width: 78%;
-  }
-
-  .glow-card .img-div {
-    position: relative;
-    bottom: 0;
-    margin-top: 60px;
-  }
-
-  .glow-card .img-div img {
-    width: 100%;
-    height: auto;
-  }
+/* Custom Padding for Vertical Centered Blocks */
+.custom-padding-right {
+  padding: 150px 0px 150px 150px;
+}
+.custom-padding-left {
+  padding: 150px 150px 150px 0px;
 }
 
-
-/* } */
-
-/* === Small Mobile (320px - 480px) === */
-@media (min-width: 320px) and (max-width: 480px) {
-  .info-row {
-    padding-top: 0px;
-  }
-
-  .info-row h2 {
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center !important;
-    width: 100% !important;
-  }
-
-  .info-row p {
-    font-size: 14px;
-    line-height: 22px;
-    width: 90% !important;
-    margin: 0 auto;
-    text-align: center !important;
-  }
-
-  .info-row img {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .info-row .col-sm-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
+/* Default Styling */
+.info-row{
+  margin-top: 50px;
+}
+.info-row h2 {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
 }
 
-/* === Large Mobile (481px - 767px) === */
-@media (min-width: 481px) and (max-width: 767px) {
-  .info-row h2 {
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center !important;
-    width: 100% !important;
-  }
-
-  .info-row p {
-    font-size: 15px;
-    line-height: 24px;
-    width: 85% !important;
-    margin: 0 auto;
-    text-align: center !important;
-  }
-
-  .info-row img {
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .info-row .col-sm-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 25px;
-  }
+.info-row p {
+  font-size: 20px;
+  line-height: 32px;
 }
 
-/* === Small Tablet (768px - 991px) === */
-@media (min-width: 768px) and (max-width: 991px) {
-  .info-row h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .info-row p {
-    font-size: 16px;
-    line-height: 26px;
-    width: 90%;
-  }
-
-  .info-row img {
-    max-width: 90%;
-  }
+@media (max-width: 1399px) {
+  .info-row h2 { font-size: 40px; line-height: 48px; }
+  .info-row p { font-size: 18px; line-height: 30px; }
+  /* .custom-padding { padding: 120px 0; } */
+  .custom-padding-right {
+  padding: 120px 0px 120px 120px;
+}
+.custom-padding-left {
+  padding: 120px 120px 120px 0px;
+}
 }
 
-/* === Large Tablet (992px - 1199px) === */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .info-row h2 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .info-row p {
-    font-size: 17px;
-    line-height: 28px;
-    width: 80%;
-  }
-
-  .info-row img {
-    max-width: 100%;
-  }
+@media (max-width: 1199px) {
+  .info-row h2 { font-size: 36px; line-height: 44px; }
+  .info-row p { font-size: 17px; line-height: 28px; }
+  /* .custom-padding { padding: 100px 0; } */
+  .custom-padding-right {
+  padding: 100px 0px 100px 100px;
+}
+.custom-padding-left {
+  padding: 100px 100px 100px 0px;
+}
 }
 
-/* === Laptops (1200px - 1399px) === */
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .info-row h2 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .info-row p {
-    font-size: 18px;
-    line-height: 30px;
-    width: 75%;
-  }
+@media (max-width: 991px) {
+  .info-row h2 { font-size: 32px; line-height: 40px; text-align: center; }
+  .info-row p { font-size: 16px; line-height: 26px; text-align: center; }
+  /* .custom-padding { padding: 80px 0; } */
+  .custom-padding-right {
+  padding: 80px 0px 80px 80px;
+}
+.custom-padding-left {
+  padding: 80px 80px 80px 0px;
+}
 }
 
-/* === Large Desktops (1400px and above) === */
-@media (min-width: 1400px) {
-
-  .info-row h2 {
-    font-size: 44px;
-    line-height: 52px;
-  }
-
-  .info-row p {
-    font-size: 20px;
-    line-height: 32px;
-    width: 70%;
-  }
+@media (max-width: 767px) {
+  .info-row h2 { font-size: 28px; line-height: 36px; }
+  .info-row p { font-size: 15px; line-height: 24px; }
+  /* .custom-padding { padding: 60px 0; } */
+  .custom-padding-right {
+  padding: 60px 0px 60px 60px;
+}
+.custom-padding-left {
+  padding: 60px 60px 60px 0px;
+}
 }
 
-/* === iPad Pro (1024x1366) Portrait === */
-@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) {
-  .info-row h2 {
-    font-size: 38px;
-    margin-top: 60px;
-  }
-
-  .info-row p {
-    font-size: 18px;
-    line-height: 30px;
-    width: 80%;
-  }
-
-  .info-row img {
-    max-width: 100%;
-    height: auto;
-  }
+@media (max-width: 575px) {
+  .info-row{
+  margin-top: 100px;
 }
+  .info-row h2 { font-size: 24px; line-height: 32px; }
+  .info-row p { font-size: 14px; line-height: 22px; }
+  /* .custom-padding { padding: 40px 0; } */
+  .custom-padding-right {
+  padding: 30px;
+}
+.custom-padding-left {
+  padding: 30px;
+}
+}
+
 
 
 
@@ -2668,6 +2594,68 @@ height: 116px;
   text-align: center;
 }
 
+/* === Responsive Tweaks for Background Image === */
+
+/* Extra Large Screens (≥1400px) */
+@media (min-width: 1400px) {
+  .why-choose-us {
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+/* Desktops (1200px - 1399px) */
+@media (max-width: 1399px) {
+  .why-choose-us {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+/* Laptops/Tablets Landscape (992px - 1199px) */
+@media (max-width: 1199px) {
+  .why-choose-us {
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+/* Tablets Portrait (768px - 991px) */
+@media (max-width: 991px) {
+  .why-choose-us {
+    background-size: cover;
+    background-position: top center;
+    padding: 80px 15px;
+  }
+}
+
+/* Large Mobiles (576px - 767px) */
+@media (max-width: 767px) {
+  .why-choose-us {
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+/* Small Mobiles (<576px) */
+@media (max-width: 575px) {
+  .why-choose-us {
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center top;
+    padding: 60px 10px;
+  }
+}
+
+/* iPad Pro (1020px - 1050px) */
+@media (min-width: 1020px) and (max-width: 1050px) {
+  .why-choose-us {
+    background-size: contain;
+    background-position: top center;
+  }
+}
+
+
 .why-choose-us h1 {
   font-weight: 700;
   font-size: 75px;
@@ -2680,7 +2668,7 @@ height: 116px;
 .choose-pill {
   background-color: white;
   border-radius: 50px;
-  padding: 27px 40px;
+  padding: 27px 35px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -2704,6 +2692,13 @@ height: 116px;
     font-size: 75px;
     line-height: 85px;
   }
+  .choose-pill {
+  background-color: white;
+  border-radius: 50px;
+  padding: 27px 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
 }
 
 /* Desktops (1200px - 1399px) */
@@ -2722,7 +2717,7 @@ height: 116px;
   }
 
   .choose-pill {
-    padding: 20px 35px;
+    padding: 20px 30px;
     font-size: 18px;
   }
 }
@@ -2739,7 +2734,7 @@ height: 116px;
   }
 
   .choose-pill {
-    padding: 18px 30px;
+    padding: 18px 28px;
     font-size: 16px;
   }
 }
@@ -2782,7 +2777,7 @@ height: 116px;
   }
 
   .choose-pill {
-    padding: 20px 35px;
+    padding: 20px 30px;
     font-size: 17px;
   }
 }
@@ -2841,9 +2836,9 @@ height: 116px;
     line-height: 32px;
   }
 
-  .help-logo img {
+  /* .help-logo img {
     max-width: 100px;
-  }
+  } */
 }
 
 /* Large Mobile (481px - 767px) */
