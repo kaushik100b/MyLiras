@@ -397,9 +397,14 @@ body {
     border-radius: 0 0 12px 12px;
   }
 
+  .navbar-nav{
+    width: 100%;
+  }
+
   .navbar-nav .nav-item {
     color: #101320 !important;
     margin: 0px;
+
   }
   .navbar-nav .btn-dark{
     width: 100%;
@@ -1944,12 +1949,12 @@ vertical-align: middle;
   }
 
   .hero-header {
-    font-size: 26px;
-    line-height: 32px;
+            font-size: 40px;
+        line-height: 70px;
   }
 
   .about-hero p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
     width: 90%;
   }
@@ -2114,14 +2119,14 @@ vertical-align: middle;
   }
 
   .who-we-are h1 {
-    font-size: 26px;
-    line-height: 32px;
+            font-size: 40px;
+        line-height: 70px;
   }
 
   .who-we-are p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
-    width: 90%;
+    width: 80%;
     margin: 0px;
   }
 }
@@ -2551,7 +2556,7 @@ vertical-align: middle;
   .about-work {
     background-size: cover;
     min-height: 45vh;
-    padding-top: 0px;
+    padding-top: 30px;
     
   }
 
@@ -3033,10 +3038,11 @@ vertical-align: middle;
     line-height: 38px;
   }
 
-  .choose-pill {
-    padding: 12px 20px;
-    font-size: 14px;
-  }
+      .choose-pill {
+        padding: 10px 17px;
+        font-size: 13px;
+        width: 100%;
+    }
 }
 
 /* Specific for iPad Pro (1024px width) */
@@ -3102,13 +3108,14 @@ vertical-align: middle;
 
   .help-text h4,
   .help-text p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
-  /* .help-logo img {
-    max-width: 100px;
-  } */
+      .help-logo img {
+        width: 200px;
+        height: auto;
+    }
 }
 
 /* Large Mobile (481px - 767px) */
