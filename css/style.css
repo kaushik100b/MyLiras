@@ -1918,10 +1918,25 @@ vertical-align: middle;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+.hero-header {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+}
 
-/* Small Mobile Devices (320px - 480px) */
+.about-hero p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* === Small Mobiles (320px - 480px) === */
 @media (min-width: 320px) and (max-width: 480px) {
   .about-hero {
     min-height: 60vh;
@@ -1929,18 +1944,18 @@ vertical-align: middle;
   }
 
   .hero-header {
-    font-size: 1.8rem;
+    font-size: 26px;
+    line-height: 32px;
   }
 
   .about-hero p {
-    width: 100% !important;
-    padding: 0 10px;
-    font-size: 0.9rem;
+    font-size: 14px;
     line-height: 1.7;
+    width: 90%;
   }
 }
 
-/* Large Mobile Devices (481px - 767px) */
+/* === Large Mobiles (481px - 767px) === */
 @media (min-width: 481px) and (max-width: 767px) {
   .about-hero {
     min-height: 65vh;
@@ -1948,16 +1963,18 @@ vertical-align: middle;
   }
 
   .hero-header {
-    font-size: 2rem;
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .about-hero p {
-    width: 90% !important;
-    font-size: 1rem;
+    font-size: 16px;
+    line-height: 26px;
+    width: 90%;
   }
 }
 
-/* Small Tablets (768px - 991px) */
+/* === Tablets (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
   .about-hero {
     min-height: 70vh;
@@ -1965,85 +1982,108 @@ vertical-align: middle;
   }
 
   .hero-header {
-    font-size: 2.2rem;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .about-hero p {
-    width: 85% !important;
-    font-size: 1.05rem;
+    font-size: 18px;
+    line-height: 28px;
+    width: 85%;
   }
 }
 
-/* Large Tablets & Small Laptops (992px - 1199px) */
+/* === Small Laptops (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero-header {
-    font-size: 2.4rem;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .about-hero p {
-    width: 80% !important;
-    font-size: 1.1rem;
+    font-size: 19px;
+    line-height: 32px;
+    width: 80%;
   }
 }
 
-/* Laptops & Desktops (1200px - 1399px) */
+/* === Laptops (1200px - 1399px) === */
 @media (min-width: 1200px) and (max-width: 1399px) {
   .hero-header {
-    font-size: 2.7rem;
+    font-size: 44px;
+    line-height: 52px;
   }
 
   .about-hero p {
-    width: 75% !important;
-    font-size: 1.15rem;
+    font-size: 20px;
+    line-height: 34px;
+    width: 75%;
   }
 }
 
-/* Large Desktops (1400px and up) */
-@media (min-width: 1400px) {
+/* === Large Desktops (1400px - 1599px) === */
+@media (min-width: 1400px) and (max-width: 1599px) {
   .hero-header {
-    font-size: 3rem;
+    font-size: 48px;
+    line-height: 56px;
   }
 
   .about-hero p {
-    width: 70% !important;
-    font-size: 1.2rem;
+    font-size: 20px;
+    line-height: 29px;
+    width: 70%;
   }
 }
 
-/* iPad Pro Portrait (12.9") */
+/* === Ultra-Wide Screens (1600px and up) === */
+@media (min-width: 1600px) {
+  .hero-header {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .about-hero p {
+    font-size: 24px;
+    line-height: 38px;
+    width: 58%;
+  }
+
+  .about-hero {
+    min-height: 80vh;
+    background-size: cover;
+  }
+}
+
+/* === iPad Pro Portrait (1024 x 1366) === */
 @media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) {
   .about-hero {
-    min-height: 75vh;
-    background-position: center top;
+    min-height: 50vh;
+    background-position: top center;
   }
 
   .hero-header {
-    font-size: 2.5rem;
+    font-size: 42px;
   }
 
   .about-hero p {
-    width: 80% !important;
-    font-size: 1.1rem;
+    font-size: 20px;
+    width: 50%;
   }
 }
+
 
 
 /* === Section 2 Base === */
 .who-we-are {
-  min-height: 60vh;
+  min-height: 70vh;
   background-image: url('../images/Who We Are.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: start;
   aspect-ratio: 16/9;
-  /* padding-top: 100px; */
-}
-
-.who-we-are .container {
-  min-height: 50vh;
 }
 
 .who-we-are h1 {
@@ -2052,7 +2092,6 @@ vertical-align: middle;
   line-height: 50px;
   letter-spacing: 0px;
   text-align: center;
-  /* margin-top: 200px; */
 }
 
 .who-we-are p {
@@ -2060,7 +2099,7 @@ vertical-align: middle;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -2077,7 +2116,6 @@ vertical-align: middle;
   .who-we-are h1 {
     font-size: 26px;
     line-height: 32px;
-    /* margin-top: 100px; */
   }
 
   .who-we-are p {
@@ -2108,20 +2146,19 @@ vertical-align: middle;
   }
 }
 
-/* === Small Tablets (768px - 991px) === */
+/* === Tablets (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
   .who-we-are {
-    /* padding-top: 80px; */
     min-height: 30vh;
   }
 
   .who-we-are .container {
     min-height: 15vh;
-}
+  }
+
   .who-we-are h1 {
     font-size: 36px;
     line-height: 44px;
-    margin-top: 0px;
   }
 
   .who-we-are p {
@@ -2131,19 +2168,19 @@ vertical-align: middle;
   }
 }
 
-/* === Large Tablets / Small Laptops (992px - 1199px) === */
+/* === Small Laptops (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
-   .who-we-are .container {
+  .who-we-are {
     min-height: 35vh;
-}
-   .who-we-are {
+  }
+
+  .who-we-are .container {
     min-height: 35vh;
-}
+  }
 
   .who-we-are h1 {
     font-size: 40px;
     line-height: 48px;
-    margin-top: 0px;
   }
 
   .who-we-are p {
@@ -2157,26 +2194,46 @@ vertical-align: middle;
 @media (min-width: 1200px) and (max-width: 1399px) {
   .who-we-are h1 {
     font-size: 44px;
-    line-height: 50px;
+    line-height: 52px;
   }
 
   .who-we-are p {
     font-size: 20px;
+    line-height: 34px;
     width: 75%;
   }
 }
 
-/* === Large Desktops (1400px and up) === */
-@media (min-width: 1400px) {
+/* === Large Desktops (1400px - 1599px) === */
+@media (min-width: 1400px) and (max-width: 1599px) {
   .who-we-are h1 {
     font-size: 48px;
     line-height: 56px;
   }
 
   .who-we-are p {
-    font-size: 22px;
-    line-height: 35px;
-    width: 70%;
+    font-size: 20px;
+        line-height: 29px;
+        width: 70%;
+  }
+}
+
+/* === Ultra-Wide Screens (1600px and up) === */
+@media (min-width: 1600px) {
+  .who-we-are h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .who-we-are p {
+    font-size: 24px;
+    line-height: 38px;
+    width: 58%;
+  }
+
+  .who-we-are {
+    min-height: 80vh;
+    background-size: contain;
   }
 }
 
@@ -2198,26 +2255,25 @@ vertical-align: middle;
 
   .who-we-are p {
     font-size: 20px;
-    width: 78%;
+    width: 50%;
   }
 }
 
 
 
-/* Section Styling */
-
-/* Info Box Styling */
+/* ===== Default Styles (Desktops ≥1400px) ===== */
 .info-box {
   background-color: #F5F5F5;
   text-align: left;
+  padding: 30px;
 }
 
 .info-text {
-font-weight: 500;
-font-size: 20px;
-line-height: 28px;
-letter-spacing: 0px;
-color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #000;
 }
 
 .icon {
@@ -2231,25 +2287,209 @@ color: #000;
   margin-bottom: 40px;
 }
 
-
-.help-text h4{
-font-weight: 700;
-font-size: 48px;
-line-height: 60px;
-letter-spacing: -1.2px;
-color: #000;
+.help-text h4 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #000;
 }
 
-.help-text p{
-font-weight: 400;
-font-size: 48px;
-line-height: 60px;
-letter-spacing: -1.2px;
-color: #05090D;
+.help-text p {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #05090D;
 }
-.help-logo img{
+
+.help-logo img {
   width: 266px;
-height: 116px;
+  height: 116px;
+}
+/* ===== XXL Desktops (1400px - 1599px) ===== */
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .info-box{
+    padding: 20px;
+  }
+  .info-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .help-text h4,
+  .help-text p {
+    font-size: 46px;
+    line-height: 58px;
+  }
+
+  .help-logo img {
+    width: 260px;
+    height: auto;
+  }
+}
+
+/* ===== Ultra-Wide Screens (1600px and above) ===== */
+@media (min-width: 1600px) {
+  .info-box{
+    padding: 40px;
+  }
+  .info-text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .help-text h4,
+  .help-text p {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .help-logo img {
+    width: 280px;
+    height: auto;
+  }
+}
+
+
+/* ===== Large Desktops (1200px - 1399px) ===== */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .info-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .help-text h4,
+  .help-text p {
+    font-size: 42px;
+    line-height: 54px;
+  }
+
+  .help-logo img {
+    width: 230px;
+    height: auto;
+  }
+}
+
+
+/* ===== Laptops (992px - 1199px) ===== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .info-box {
+    padding: 30px !important;
+  }
+
+  .info-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .help-text h4,
+  .help-text p {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .help-logo img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+
+/* ===== Tablets (768px - 991px) ===== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .info-box {
+    padding: 25px !important;
+  }
+
+  .info-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .help-text h4,
+  .help-text p {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .help-logo img {
+    width: 180px;
+    height: auto;
+  }
+}
+
+
+/* ===== Large Mobiles (481px - 767px) ===== */
+@media (min-width: 481px) and (max-width: 767px) {
+  .info-box {
+    padding: 20px !important;
+  }
+
+  .info-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .help-text h4,
+  .help-text p {
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .help-logo img {
+    width: 140px;
+    height: auto;
+  }
+}
+
+
+/* ===== Small Mobiles (320px - 480px) ===== */
+@media (min-width: 320px) and (max-width: 480px) {
+  .info-box {
+    padding: 15px !important;
+  }
+
+  .info-text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .help-text h4,
+  .help-text p {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .help-logo img {
+    width: 120px;
+    height: auto;
+  }
 }
 
 
@@ -2300,7 +2540,7 @@ height: 116px;
   color: #24171E;
   width: 75%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 /* === Small Mobile (320px - 480px) === */
@@ -2466,10 +2706,10 @@ height: 116px;
 /* === Large Desktops (1400px and up) === */
 @media (min-width: 1400px) {
     .boy-div{
-  min-height: 140vh;
+  min-height: 150vh;
 }
   .about-work {
-    min-height: 100vh;
+    min-height: 120vh;
     background-size: cover;
     padding-top: 60px;
   }
@@ -2490,6 +2730,36 @@ height: 116px;
     min-height: 851px;
   } */
 }
+/* === Ultra-Wide Screens (1600px and up) === */
+@media (min-width: 1600px) {
+  .boy-div {
+    min-height: 160vh;
+  }
+
+  .about-work {
+    min-height: 100vh;
+    background-size: cover;
+    padding-top: 80px;
+  }
+
+  .how-it-works-about h2 {
+    font-size: 54px;
+    line-height: 64px;
+    margin-top: 20px;
+  }
+
+  .how-it-works-about p {
+    font-size: 24px;
+    line-height: 38px;
+    width: 65%;
+  }
+
+  .glow-card .img-div img {
+    max-width: 1520px;
+    height: auto;
+  }
+}
+
 
 /* Custom Padding for Vertical Centered Blocks */
 .custom-padding-right {
@@ -2695,7 +2965,7 @@ height: 116px;
   .choose-pill {
   background-color: white;
   border-radius: 50px;
-  padding: 27px 30px;
+  padding: 25px 23px;
   font-weight: 700;
   font-size: 20px;
 }
@@ -2887,11 +3157,10 @@ height: 116px;
 
 /* Desktops (1200px and up) */
 @media (min-width: 1200px) {
-  .help-text h4,
-  .help-text p {
-    font-size: 48px;
-    line-height: 60px;
-  }
+      .help-text h4, .help-text p {
+        font-size: 34px;
+        line-height: 50px;
+    }
 
   .help-logo img {
     max-width: 260px;
@@ -2902,16 +3171,17 @@ height: 116px;
 
 
 
+
 .custom-container {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* Large Laptops (1200px - 1399px) */
 @media (max-width: 1399px) {
   .custom-container {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 180px;
+    margin-right: 180px;
   }
 }
 
@@ -2948,8 +3218,8 @@ height: 116px;
 }
 
 .custom-container-sm {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* Large laptops and desktops (≥1200px) */
