@@ -748,6 +748,7 @@ p {
   .partner-logo {
     height: 24px;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -755,7 +756,7 @@ p {
     height: 20px;
   }
   .partners-section .partner-div {
-  padding: 20px;
+  padding: 30px;
   padding-bottom: 0px;
 }
 }
