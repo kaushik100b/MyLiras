@@ -1102,6 +1102,9 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 150px;
+  margin-right: 150px;
+
 }
 
 .top-creators h2 {
