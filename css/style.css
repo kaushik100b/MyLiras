@@ -754,8 +754,11 @@ p {
   .partner-logo {
     height: 20px;
   }
+  .partners-section .partner-div {
+  padding: 20px;
+  padding-bottom: 0px;
 }
-
+}
 
 
 /* === How It Works - Base Styles === */
@@ -1607,6 +1610,10 @@ margin: 2px;
     line-height: 24px;
     padding: 0 15px; /* Optional: reduce padding further for small screens */
   }
+
+  .owl-stage-outer {
+    padding: 30px 0;
+}
 }
 
 
