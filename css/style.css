@@ -3,6 +3,7 @@
 body {
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-family: Plus Jakarta Sans;
+  overflow-x: hidden;
 }
 
 
@@ -511,9 +512,9 @@ p {
 /* .btn-danger:hover {
   background-color: #e74c3c;
 } */
-/* Base Responsive Adjustments */
+/* Base Styles */
 .earn-section {
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
   text-align: center;
 }
 
@@ -528,61 +529,67 @@ p {
   font-size: 16px;
   line-height: 28px;
   width: 100%;
-  max-width: 700px;
+  max-width: 901px;
   padding: 0 15px;
 }
 
 .s2img {
   width: 100%;
-  max-width: 720px;
-  height: auto;
+  max-width: 1000px;
   border-radius: 16px;
 }
 
-/* Small Mobile Devices (iPhone SE and similar) */
+/* Extra Small Mobile Devices (up to 375px) */
 @media (max-width: 375px) {
+  .earn-section {
+    padding: 20px 10px;
+  }
+
   .earn-section h2 {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 32px;
   }
 
   .earn-section p {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 22px;
   }
+
   .s2img {
-  width: 120%;
-}
+    width: 115%;
+  }
 }
 
-/* Medium Mobile Devices */
-@media (max-width: 576px) {
+/* Small to Medium Mobile Devices (376px to 576px) */
+@media (min-width: 376px) and (max-width: 576px) {
   .earn-section {
-    min-height: auto;
-    padding: 0px;
+    padding: 30px 15px;
   }
 
   .earn-section h2 {
-            font-size: 24px;
-        line-height: 30px;
-        width: 125%;
+    font-size: 22px;
+    line-height: 34px;
   }
 
   .earn-section p {
     font-size: 15px;
     line-height: 26px;
   }
+
+  .s2img {
+    width: 100%;
+  }
 }
 
-/* Tablets (iPad Mini, iPad Air, etc.) */
+/* Tablets (577px to 991px) */
 @media (min-width: 577px) and (max-width: 991px) {
   .earn-section {
-    padding: 60px 30px;
+    padding: 50px 30px;
   }
 
   .earn-section h2 {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 42px;
   }
 
   .earn-section p {
@@ -591,8 +598,12 @@ p {
   }
 }
 
-/* Large Tablets and Small Laptops (iPad Pro, etc.) */
+/* Small Laptops (992px to 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .earn-section {
+    padding: 60px 40px;
+  }
+
   .earn-section h2 {
     font-size: 36px;
     line-height: 48px;
@@ -604,11 +615,11 @@ p {
   }
 }
 
-/* Desktop (1200px and up) */
-@media (min-width: 1200px) {
+/* Desktops (1200px to 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
   .earn-section h2 {
     font-size: 42px;
-    line-height: 50px;
+    line-height: 52px;
   }
 
   .earn-section p {
@@ -616,6 +627,50 @@ p {
     line-height: 32px;
   }
 }
+
+/* Large Desktops (1400px to 1599px) */
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .earn-section h2 {
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  .earn-section p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .s2img {
+    max-width: 940px;
+    height: 100%;
+    min-height: 645px;
+  }
+}
+
+/* Ultra-Wide Screens (1600px and up) */
+@media (min-width: 1600px) {
+  .earn-section {
+    padding: 80px 60px;
+  }
+
+  .earn-section h2 {
+    font-size: 52px;
+    line-height: 64px;
+  }
+
+  .earn-section p {
+    font-size: 22px;
+    line-height: 36px;
+    max-width: 900px;
+  }
+
+  .s2img {
+    max-width: 1194px;
+    max-height: 645px;
+    min-height: 645px;
+  }
+}
+
 
 
 
@@ -634,7 +689,7 @@ p {
 }
 
 
-.partners-section .container {
+.partners-section .rounded {
   padding: 50px;
   background-color: #f5f5f5;
 }
@@ -1012,7 +1067,7 @@ p {
 
 @media (max-width: 576px) {
   .cta-heading {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.5px;
   }
@@ -1042,7 +1097,7 @@ p {
   background-position: center center;
 }
 
-.top-creators .container{
+.top-creators .custom-container{
   display: flex;
     justify-content: center;
     align-items: center;
@@ -1268,7 +1323,7 @@ p {
 
 /* why myliras  */
 .why-myliras{
-  padding: 100px;
+  padding: 100px 0px;
 }
 .why-myliras h2 {
   font-weight: 700;
@@ -1553,69 +1608,90 @@ margin: 2px;
 
 
 /* ---value----- */
-.value-container{
+.value-container {
   padding-top: 200px;
 }
-.left-img{
-  /* background-image: url('../images/valuefullimg.jpg'); */
-  background-image: url('../images/valueimg.png');
 
-  background-size: contain;
+.left-img {
+  background-image: url('../images/valueimg.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  /* height: 425px; */
-  height: 500px;
-  /* width: 744px; */
+  /* background-position: center; */
+  height: 500px; /* Default for large screens */
+}
+.left-img1 {
+  background-image: url('../images/valueimg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 500px; /* Default for large screens */
 }
 
-.left-img .col-lg-6 .bg-light{
-  /* height: 200px; */
+.left-img .col-lg-6 .bg-light {
   height: 240px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .left-img .title {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.2;
-}
-.left-img small {
-    font-size: 12px;
-    /* font-weight: 600; */
-    line-height: 1.2;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-.left-img .icon{
+.left-img small {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.left-img .icon {
   background-color: #FFFFFF;
   height: 60px;
   width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-/* === Media Queries === */
-@media (min-width: 1024px) and (max-width: 1400px){
-  .left-img{
-        height: 430px;
+/* === 1200px – 1399px === */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .left-img {
+    height: 430px;
   }
   .left-img .col-lg-6 .bg-light {
-    /* height: 200px; */
-    height: 205px;
+    height: 200px;
   }
-  
-  .why-myliras {
-    padding: 60px 20px;
-}
 }
 
-/* Hide background on tablets and smaller */
-@media (max-width: 1025px) {
+/* === 1400px – 1599px === */
+@media (min-width: 1400px) and (max-width: 1599px) {
   .left-img {
-    height: auto;
+    height: 560px;
+    /* background-position: left; */
+  }
+  .left-img .col-lg-6 .bg-light {
+    height: 240px;
+  }
+}
+
+/* === ≥1600px === */
+@media (min-width: 1600px) {
+  .left-img {
+    height: 560px;
+  }
+  .left-img .col-lg-6 .bg-light {
+    height: 280px;
+  }
+}
+
+/* === Tablets (768px to 1199px) === */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .left-img {
     background-image: none !important;
+    height: auto;
     padding: 0;
   }
 
@@ -1623,23 +1699,24 @@ margin: 2px;
     padding-top: 100px;
   }
 
-      .left-img .col-xl-3 .bg-light {
-        flex-direction: row;
-        gap: 2rem;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        border-radius: 16px;
-        display: flex;
-        padding: 30px;
-        margin: 35px 35px 0px 35px;
-    }
+  .left-img .col-xl-3 .bg-light {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-radius: 16px;
+    display: flex;
+    padding: 30px;
+    margin: 35px;
+  }
 
   .icon {
     margin-bottom: 0;
   }
 }
 
+/* === Mobile (max-width: 576px) === */
 @media (max-width: 576px) {
   .title {
     font-size: 13px;
@@ -1648,9 +1725,22 @@ margin: 2px;
   .left-img small {
     font-size: 11px;
   }
+
+  .left-img {
+    background-image: none !important;
+    height: auto;
+  }
+
+  .left-img .col-xl-3 .bg-light {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+    height: auto;
+  }
 }
 
-/* === Only for iPad Air (Portrait and Landscape) === */
+/* === iPad Air Specific (Portrait & Landscape) === */
 @media screen and (width: 820px), screen and (width: 1180px) {
   .left-img {
     background-image: none !important;
@@ -1666,7 +1756,7 @@ margin: 2px;
     flex-direction: row;
     gap: 2rem;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     height: 140px;
     border-radius: 16px;
     display: flex;
@@ -1678,6 +1768,8 @@ margin: 2px;
     margin-bottom: 0;
   }
 }
+
+
 
 
 /* ========footer============= */
@@ -2029,7 +2121,7 @@ vertical-align: middle;
 /* === Large Desktops (1400px - 1599px) === */
 @media (min-width: 1400px) and (max-width: 1599px) {
   .hero-header {
-    font-size: 48px;
+    font-size: 52px;
     line-height: 56px;
   }
 
@@ -3192,6 +3284,7 @@ vertical-align: middle;
 .custom-container {
   margin-left: 200px;
   margin-right: 200px;
+  /* width: 80%; */
 }
 
 /* Large Laptops (1200px - 1399px) */
@@ -3279,3 +3372,270 @@ vertical-align: middle;
   }
 }
 
+
+
+/* ==============value rounded img=============== */
+ .value-div {
+            min-height: 10vh;
+            /* background-color: antiquewhite; */
+        }
+
+        .windmill-section {
+            background: url('../images/valuefullimg.jpg') no-repeat center center/cover;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+
+        .overlay-box {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(255, 255, 255);
+            width: 60%;
+            height: 50%;
+            border-top-left-radius: 2rem;
+            z-index: 2;
+            display: flex;
+        }
+
+        .overlay-top-right {
+            position: absolute;
+            top: -50px;
+            right: 0px;
+
+            background-color: transparent;
+            box-shadow: 20px 20px 0 white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            /* border-bottom-right-radius: 0px ; */
+            /* border: 1px solid rgb(255, 255, 255); */
+            z-index: 2;
+        }
+
+        .overlay-top-bottom {
+            position: absolute;
+            left: -50px;
+            bottom: 0px;
+
+            background-color: transparent;
+            box-shadow: 20px 20px 0 white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            /* border-bottom-right-radius: 0px ; */
+            /* border: 1px solid rgb(255, 255, 255); */
+            z-index: 2;
+        }
+
+
+        @media (max-width: 768px) {
+            .overlay-box {
+                width: 100%;
+                height: 50%;
+                border-top-left-radius: 1.5rem;
+                border-top-right-radius: 1.5rem;
+            }
+
+            .overlay-top-right {
+                width: 100%;
+                height: 50%;
+                border-bottom-left-radius: 1.5rem;
+                border-bottom-right-radius: 1.5rem;
+            }
+        }
+
+        .value-card {
+            height: 100%;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .value-card .title {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .value-card small {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
+        .value-card .icon {
+            background-color: #FFFFFF;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 💻 XXL Desktops - width > 1600px */
+        @media (min-width: 1601px) {
+            .windmill-section {
+                height: 100%;
+            }
+
+            .overlay-box {
+                width: 50%;
+                height: 53%;
+            }
+
+            .value-card .title {
+                font-size: 16px;
+            }
+
+            .value-card small {
+                font-size: 14px;
+            }
+        }
+
+        /* 🖥️ Large Desktops - 1400px to 1600px */
+        @media (min-width: 1400px) and (max-width: 1600px) {
+            .windmill-section {
+                height: 100%;
+                /* 577px equivalent */
+            }
+
+            .overlay-box {
+                width: 48%;
+                height: 50%;
+            }
+        }
+
+        /* 🧑‍💻 Medium Desktops - 1200px to 1399px */
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            .windmill-section {
+                height: 100%;
+            }
+
+            .overlay-box {
+                width: 50%;
+                height: 50%;
+            }
+
+            .value-card .title {
+                font-size: 14px;
+            }
+        }
+
+        /* 💼 Regular Laptops - 992px to 1199px */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .windmill-section {
+                height: 50vh;
+            }
+
+            .overlay-box {
+                width: 55%;
+                height: 50%;
+            }
+
+            .value-card .title {
+                font-size: 13px;
+            }
+        }
+
+        /* 📱 Already defined for tablets & mobile <768px */
+
+        .overlay-box {
+            align-items: stretch;
+            /* make children use full height */
+        }
+
+        .value-card {
+            min-height: 100% !important;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            /* center content vertically */
+            justify-content: center;
+            /* center content horizontally if needed */
+            padding: 20px 0px 0px 20px;
+        }
+
+        .value-card>div {
+            width: 100%;
+            /* ensures inner box takes full width */
+            min-height: 100%;
+            /* ensures full height inside card */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        /* 📱 Small Mobiles (≤ 480px) */
+@media (max-width: 480px) {
+    .overlay-box {
+        width: 100%;
+        height: 60%;
+        border-radius: 1.25rem 1.25rem 0 0;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .value-card {
+        padding: 0 10px;
+    }
+
+    .value-card .title {
+        font-size: 13px;
+    }
+
+    .value-card small {
+        font-size: 11px;
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* 📱 Large Mobiles (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .overlay-box {
+        width: 100%;
+        height: 55%;
+        padding: 1rem;
+    }
+
+    .value-card .title {
+        font-size: 14px;
+    }
+
+    .value-card small {
+        font-size: 12px;
+    }
+
+    .icon {
+        height: 55px;
+        width: 55px;
+    }
+}
+
+/* 📲 Tablets (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .overlay-box {
+        width: 100%;
+        height: 50%;
+    }
+
+    .value-card {
+        padding: 0 15px;
+    }
+
+    .value-card .title {
+        font-size: 15px;
+    }
+
+    .icon {
+        height: 60px;
+        width: 60px;
+    }
+}
+/* ==============value rounded img=============== */
