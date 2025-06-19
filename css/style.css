@@ -58,7 +58,7 @@ body {
 
 /* ------------------ Base Hero Section ------------------ */
 .hero-section {
-  background-image: url('../images/hero-bg.svg'); /* Update path if needed */
+  background-image: url('../images/hero-bg.jpg'); /* Update path if needed */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
