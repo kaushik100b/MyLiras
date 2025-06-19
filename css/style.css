@@ -872,7 +872,7 @@ p {
 
 /* --- Section 9: CTA Styles --- */
 .cta-section {
-  background-image: url('../images/cta.png');
+  background-image: url('../images/cta.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -939,7 +939,7 @@ p {
 /* ===top creators ==== */
 
 .top-creators {
-  background-image: url('../images/Top\ Creators\ &\ Real\ Campaigns\ That\ Work.png');
+  background-image: url('../images/Top\ Creators\ &\ Real\ Campaigns\ That\ Work.jpg');
   min-height: 120vh;
   position: relative;
   background-size: cover;
@@ -1311,7 +1311,7 @@ letter-spacing: 0%;
 }
 /* testimonial  */
 .testimonial-section {
-  background-image: url('../images/Testimonials.png');
+  background-image: url('../images/Testimonials.jpg');
    min-height: 900px;
   position: relative;
   background-size: cover;
@@ -1488,7 +1488,7 @@ margin: 2px;
       /* height: 1000px; */
       overflow: hidden;
       color: white;
-      background-image: url('../images/footerbg.png');
+      background-image: url('../images/footerbg.jpg');
       background-size: cover;
       background-position: center;
       display: flex;
@@ -1696,7 +1696,7 @@ vertical-align: middle;
 
 /* ---=======ABOUT US=====++++++++ */
 .about-hero {
-  background-image: url('../images/about hero section.png');
+  background-image: url('../images/about\ hero\ section.jpg');
   min-height: 80vh;
   background-size: cover;
   background-position: top left;
@@ -1861,7 +1861,7 @@ vertical-align: middle;
 /* === Section 2 Base === */
 .who-we-are {
   min-height: 70vh;
-  background-image: url('../images/Who We Are.png');
+  background-image: url('../images/Who\ We\ Are.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2268,7 +2268,7 @@ vertical-align: middle;
 /* === Base Styles === */
 
 .about-work {
-  background-image: url('../images/Top Creators & Real Campaigns That Work.png');
+  background-image: url('../images/Top\ Creators\ &\ Real\ Campaigns\ That\ Work.jpg');
   min-height: 100vh;
   position: relative;
   background-size: cover;
@@ -2624,7 +2624,7 @@ vertical-align: middle;
 }
 
 .why-choose-us {
-  background-image: url('../images/Why\ Choose\ MyLiras_.png');
+  background-image: url('../images/Why\ Choose\ MyLiras_.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -3275,7 +3275,7 @@ vertical-align: middle;
 .formbg {
   min-height: 100vh;
   width: 100%;
-  background-image: url('../images/about hero section.png');
+  background-image: url('../images/about\ hero\ section.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
