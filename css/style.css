@@ -3293,7 +3293,7 @@ vertical-align: middle;
   border-radius: 20px;
   padding-top: 4px;
   width: 100%;
-  max-width: 550px;
+  max-width: 510px;
   margin: auto;
 }
 
@@ -3366,40 +3366,45 @@ a[style*="color: #FF511A;"]:hover {
 /* XXL Screens (1600px+) */
 @media (min-width: 1600px) {
   .login-border-wrapper{
-    max-width: 615px;
+    max-width: 550px;
+    margin-top: 50px;
   }
   .formbg {
-  min-height: 110vh;
+  min-height: 100vh;
 }
   .login-box {
-    padding: 60px;
+    padding: 50px;
   }
 
   .login-box h2 {
-    font-size: 2.2rem;
+    font-size: 24px;
   }
 
   .login-box p {
-    font-size: 1.1rem;
+    font-size: 16px;
   }
 
 }
 
 /* Large laptops (1200px–1599px) */
 @media (min-width: 1200px) and (max-width: 1599.98px) {
+  .login-border-wrapper{
+    margin-top: 80px;
+  }
   .formbg {
-  min-height: 130vh;
+  min-height: 100vh;
 }
   .login-box {
-    padding: 40px;
+    padding: 50px;
   }
 
   .login-box h2 {
-    font-size: 1.8rem;
+    font-size: 22px;
   }
 
   .login-box p {
-    font-size: 1rem;
+    font-size: 14px;
+    line-height: 20px;
   }
 
 }
@@ -3407,7 +3412,7 @@ a[style*="color: #FF511A;"]:hover {
 /* Medium laptops & tablets landscape (992px–1199px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .login-box {
-    padding: 35px;
+    padding: 40px;
   }
 
   .login-box h2 {
@@ -3461,7 +3466,7 @@ a[style*="color: #FF511A;"]:hover {
 /* Small Mobile (up to 575px) */
 @media (max-width: 575.98px) {
   .formbg{
-    min-height: 120vh;
+    min-height: 80vh;
   }
   .login-box {
     padding: 20px;
