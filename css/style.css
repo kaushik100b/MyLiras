@@ -3274,7 +3274,7 @@ vertical-align: middle;
 /* Form Background */
 /* ========= GLOBAL FORM BACKGROUND ========== */
 .formbg {
-  min-height: 120vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url('../images/about hero section.jpg');
   background-size: cover;
@@ -3457,6 +3457,9 @@ a[style*="color: #FF511A;"]:hover {
 
 /* Small Mobile (up to 575px) */
 @media (max-width: 575.98px) {
+  .formbg{
+    min-height: 110vh;
+  }
   .login-box {
     padding: 20px;
   }
@@ -3467,6 +3470,7 @@ a[style*="color: #FF511A;"]:hover {
 
   .login-box p {
     font-size: 0.8rem;
+    line-height: 20px;
   }
 
 }
