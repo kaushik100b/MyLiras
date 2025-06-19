@@ -58,7 +58,7 @@ body {
 
 /* ------------------ Base Hero Section ------------------ */
 .hero-section {
-  background-image: url('../images/hero-bg.jpg'); /* Update path if needed */
+  background-image: url('../images/smallherobg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -3345,22 +3345,7 @@ vertical-align: middle;
   box-shadow: none;
 }
 
-/* ========= BUTTONS ========== */
-.btn-orange {
-  background-color: #FF511A;
-  border: none;
-  border-radius: 40px;
-  padding: 14px 0;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  /* transition: background 0.3s ease; */
-}
 
-.btn-orange:hover {
-  background-color: #e84e12;
-  color: #fff;
-}
 
 /* ========= TEXT LINKS ========== */
 a {
