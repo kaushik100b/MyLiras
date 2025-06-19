@@ -3395,9 +3395,6 @@ a[style*="color: #FF511A;"]:hover {
     font-size: 1.1rem;
   }
 
-  .btn-orange {
-    font-size: 1.1rem;
-  }
 }
 
 /* Large laptops (1200px–1599px) */
@@ -3417,9 +3414,6 @@ a[style*="color: #FF511A;"]:hover {
     font-size: 1rem;
   }
 
-  .btn-orange {
-    padding: 12px 0;
-  }
 }
 
 /* Medium laptops & tablets landscape (992px–1199px) */
@@ -3436,9 +3430,6 @@ a[style*="color: #FF511A;"]:hover {
     font-size: 0.95rem;
   }
 
-  .btn-orange {
-    padding: 12px 0;
-  }
 }
 
 /* Tablets portrait and large phones (768px–991px) */
@@ -3474,10 +3465,6 @@ a[style*="color: #FF511A;"]:hover {
     font-size: 0.85rem;
   }
 
-  .btn-orange {
-    font-size: 0.95rem;
-  }
-
   .input-group {
     padding: 10px 12px;
   }
@@ -3497,8 +3484,5 @@ a[style*="color: #FF511A;"]:hover {
     font-size: 0.8rem;
   }
 
-  .btn-orange {
-    font-size: 0.9rem;
-  }
 }
 
