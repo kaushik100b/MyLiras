@@ -3308,12 +3308,12 @@ vertical-align: middle;
 
 /* ========= TEXT + TYPOGRAPHY ========== */
 .login-box h2 {
-  font-size: 2rem;
+  font-size: 24px;
   margin-bottom: 0.5rem;
 }
 
 .login-box p {
-  font-size: 1rem;
+  font-size: 14px;
   margin-bottom: 1rem;
   color: #6c757d;
 }
@@ -3365,6 +3365,9 @@ a[style*="color: #FF511A;"]:hover {
 
 /* XXL Screens (1600px+) */
 @media (min-width: 1600px) {
+  .login-border-wrapper{
+    max-width: 615px;
+  }
   .formbg {
   min-height: 110vh;
 }
@@ -3473,5 +3476,10 @@ a[style*="color: #FF511A;"]:hover {
     line-height: 20px;
   }
 
+}
+
+.signupdiv{
+  padding: 25px;
+  border-radius: 10px;
 }
 
