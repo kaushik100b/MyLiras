@@ -3461,7 +3461,7 @@ a[style*="color: #FF511A;"]:hover {
 /* Small Mobile (up to 575px) */
 @media (max-width: 575.98px) {
   .formbg{
-    min-height: 110vh;
+    min-height: 120vh;
   }
   .login-box {
     padding: 20px;
