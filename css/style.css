@@ -3272,78 +3272,233 @@ vertical-align: middle;
 
 
 /* Form Background */
+/* ========= GLOBAL FORM BACKGROUND ========== */
 .formbg {
-  min-height: 100vh;
+  min-height: 120vh;
   width: 100%;
-  background-image: url('../images/about\ hero\ section.jpg');
+  background-image: url('../images/about hero section.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
   box-sizing: border-box;
-  position: relative;
 }
 
-/* Login Box Container */
+/* ========= LOGIN CONTAINER ========== */
 .login-border-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4px;
-  border-radius: 20px;
   background: linear-gradient(90deg, #FF511A 0%, #FFC517 100%);
-  width: fit-content;
-  margin: auto;
-  margin-top: 80px; /* Remove margin-top to let flex centering work */
-}
-
-/* Optional: for vertical spacing only on small screens */
-@media (max-width: 575.98px) {
-  .login-border-wrapper {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-}
-
-.login-box {
-  max-width: 510px;
+  border-radius: 20px;
+  padding-top: 4px;
   width: 100%;
+  max-width: 550px;
+  margin: auto;
+}
+
+/* ========= LOGIN BOX INNER ========== */
+.login-box {
   background-color: #fff;
   border-radius: 16px;
   padding: 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Input Group */
+/* ========= TEXT + TYPOGRAPHY ========== */
+.login-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-box p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+/* ========= INPUT GROUP ========== */
 .input-group {
   background-color: #F8FAFC;
   border-radius: 4px;
+  padding: 14px 16px;
   display: flex;
   align-items: center;
-  padding: 14px 16px;
+  border: 1px solid #ccc;
 }
 
-/* Input fields */
-input.form-control {
-  border-radius: 8px;
-}
-
-/* Input group icon - left */
 .input-group-text {
   border: none;
   color: #667085;
-  padding: auto;
+  background: transparent;
+  display: flex;
+  align-items: center;
 }
 
-/* Remove default borders for seamless look */
 .input-group .form-control {
   border: none;
   background-color: #F8FAFC;
+  border-radius: 8px;
+  flex: 1;
+  outline: none;
+  box-shadow: none;
 }
 
-/* Right side icon (eye) */
-.input-group .form-control + .input-group-text {
+/* ========= BUTTONS ========== */
+.btn-orange {
+  background-color: #FF511A;
   border: none;
+  border-radius: 40px;
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  /* transition: background 0.3s ease; */
 }
+
+.btn-orange:hover {
+  background-color: #e84e12;
+  color: #fff;
+}
+
+/* ========= TEXT LINKS ========== */
+a {
+  text-decoration: none;
+}
+
+a.text-muted:hover,
+a.text-muted:focus {
+  color: #000;
+}
+
+a[style*="color: #FF511A;"]:hover {
+  text-decoration: underline;
+}
+
+/* ========= RESPONSIVE STYLES ========== */
+
+/* XXL Screens (1600px+) */
+@media (min-width: 1600px) {
+  .formbg {
+  min-height: 110vh;
+}
+  .login-box {
+    padding: 60px;
+  }
+
+  .login-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .login-box p {
+    font-size: 1.1rem;
+  }
+
+  .btn-orange {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large laptops (1200px–1599px) */
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+  .formbg {
+  min-height: 130vh;
+}
+  .login-box {
+    padding: 40px;
+  }
+
+  .login-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .login-box p {
+    font-size: 1rem;
+  }
+
+  .btn-orange {
+    padding: 12px 0;
+  }
+}
+
+/* Medium laptops & tablets landscape (992px–1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .login-box {
+    padding: 35px;
+  }
+
+  .login-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .login-box p {
+    font-size: 0.95rem;
+  }
+
+  .btn-orange {
+    padding: 12px 0;
+  }
+}
+
+/* Tablets portrait and large phones (768px–991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .login-box {
+    padding: 30px;
+  }
+
+  .login-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-box p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767.98px) {
+  .login-border-wrapper {
+    border-radius: 16px;
+  }
+
+  .login-box {
+    padding: 25px;
+  }
+
+  .login-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-box p {
+    font-size: 0.85rem;
+  }
+
+  .btn-orange {
+    font-size: 0.95rem;
+  }
+
+  .input-group {
+    padding: 10px 12px;
+  }
+}
+
+/* Small Mobile (up to 575px) */
+@media (max-width: 575.98px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .login-box p {
+    font-size: 0.8rem;
+  }
+
+  .btn-orange {
+    font-size: 0.9rem;
+  }
+}
+
