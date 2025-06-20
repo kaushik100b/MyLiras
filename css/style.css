@@ -341,16 +341,19 @@ body {
 .navbar-collapse {
   overflow: hidden;
   transition: height 0.35s ease;
+  /* padding: 20px; */
 }
 
+
+
 .navbar-collapse.collapsing {
-  height: 0 !important;
-  overflow: hidden;
+  /* height: 0 !important; */
+  /* overflow: hidden; */
   transition: height 0.35s ease;
 }
 
-/* @media (max-width: 991.98px) {
-  .navbar-collapse.show {
+@media (max-width: 991.98px) {
+  /* .navbar-collapse.show {
     background-color: #ffffff;
     text-align: center;
     display: flex;
@@ -359,8 +362,12 @@ body {
     align-items: center;
     padding: 1rem;
     border-radius: 0 0 12px 12px;
-  }
-} */
+  } */
+     .navbar-collapse .navbar-nav{
+  padding: 20px;
+  background-color: white;
+}
+}
 
 
 .overflow-hidden {
@@ -471,6 +478,7 @@ p {
 
 /* Small to Medium Mobile Devices (376px to 576px) */
 @media (min-width: 376px) and (max-width: 576px) {
+
   .earn-section {
     padding: 30px 15px;
   }
