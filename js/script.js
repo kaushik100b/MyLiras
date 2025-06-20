@@ -7,7 +7,12 @@ window.addEventListener("scroll", function () {
     }
   });
 
+// const toggler = document.querySelector('.navbar-toggler');
+//   const body = document.body;
 
+//   toggler.addEventListener('click', () => {
+//     body.classList.toggle('overflow-hidden');
+//   });
   
   $(document).ready(function(){
     $(".partner-carousel").owlCarousel({
@@ -63,3 +68,69 @@ $(document).ready(function(){
     owl.trigger('next.owl.carousel');
   });
 });
+
+
+
+const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  // Add Bootstrap events
+  navbarCollapse.addEventListener('show.bs.collapse', function () {
+    const height = navbarCollapse.scrollHeight;
+    navbarCollapse.classList.add('navbar-collapsing');
+    navbarCollapse.style.height = '0px';
+
+    requestAnimationFrame(() => {
+      navbarCollapse.style.height = height + 'px';
+    });
+  });
+
+  navbarCollapse.addEventListener('shown.bs.collapse', function () {
+    navbarCollapse.classList.remove('navbar-collapsing');
+    navbarCollapse.style.height = 'auto';
+  });
+
+  navbarCollapse.addEventListener('hide.bs.collapse', function () {
+    const height = navbarCollapse.scrollHeight;
+    navbarCollapse.style.height = height + 'px';
+    navbarCollapse.offsetHeight; // force reflow
+    navbarCollapse.classList.add('navbar-collapsing');
+
+    requestAnimationFrame(() => {
+      navbarCollapse.style.height = '0px';
+    });
+  });
+
+  navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+    navbarCollapse.classList.remove('navbar-collapsing');
+    navbarCollapse.style.height = '';
+  });
+
+
+
+// const navbarCollapse = document.querySelector('.navbar-collapse');
+
+//   const collapseEl = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+
+//   navbarCollapse.addEventListener('show.bs.collapse', function () {
+//     const height = navbarCollapse.scrollHeight;
+//     navbarCollapse.style.height = '0px';
+//     requestAnimationFrame(() => {
+//       navbarCollapse.style.height = height + 'px';
+//     });
+//   });
+
+//   navbarCollapse.addEventListener('shown.bs.collapse', function () {
+//     navbarCollapse.style.height = 'auto';
+//   });
+
+//   navbarCollapse.addEventListener('hide.bs.collapse', function () {
+//     const height = navbarCollapse.scrollHeight;
+//     navbarCollapse.style.height = height + 'px';
+//     requestAnimationFrame(() => {
+//       navbarCollapse.style.height = '0px';
+//     });
+//   });
+
+//   navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+//     navbarCollapse.style.height = '';
+//   });
