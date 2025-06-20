@@ -3322,7 +3322,8 @@ vertical-align: middle;
 .input-group {
   background-color: #F8FAFC;
   border-radius: 4px;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
+  padding: 8px 10px;
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
@@ -3359,6 +3360,11 @@ a.text-muted:focus {
 
 a[style*="color: #FF511A;"]:hover {
   text-decoration: underline;
+}
+
+.signupdiv{
+  padding: 25px;
+  border-radius: 10px;
 }
 
 /* ========= RESPONSIVE STYLES ========== */
@@ -3465,9 +3471,10 @@ a[style*="color: #FF511A;"]:hover {
 
 /* Small Mobile (up to 575px) */
 @media (max-width: 575.98px) {
-  .formbg{
-    min-height: 80vh;
-  }
+      .formbg {
+        min-height: 100vh;
+        padding-top: 80px;
+    }
   .login-box {
     padding: 20px;
   }
@@ -3480,11 +3487,10 @@ a[style*="color: #FF511A;"]:hover {
     font-size: 0.8rem;
     line-height: 20px;
   }
+  .signupdiv {
+    padding: 15px;
+  }
 
 }
 
-.signupdiv{
-  padding: 25px;
-  border-radius: 10px;
-}
 
