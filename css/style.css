@@ -285,7 +285,8 @@ body {
 
 /* Mobile toggle menu background */
 @media (max-width: 991.98px) {
-  .navbar-collapse {
+  
+  /* .navbar-collapse {
     background-color: #ffffff;
     text-align: center;
     display: flex;
@@ -294,7 +295,7 @@ body {
     align-items: center;
     padding: 1rem;
     border-radius: 0 0 12px 12px;
-  }
+  } */
 
   .navbar-nav{
     width: 100%;
@@ -313,11 +314,18 @@ body {
 }
 
 /* Smooth transition for collapsing without layout glitch */
-.navbar-collapse.collapsing {
-  height: auto !important;
-  transition: height 0.35s ease;
+/* .navbar-collapse {
   overflow: hidden;
+  transition: height 0.35s ease;
 }
+
+.navbar-collapsing {
+  display: block !important;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+} */
+
  /* Smooth slide animation for Bootstrap collapse */
 /* .navbar-collapse {
   max-height: 0;
@@ -329,6 +337,31 @@ body {
 .navbar-collapse.show {
   max-height: 500px; /* adjust based on content height 
 } */
+
+.navbar-collapse {
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.navbar-collapse.collapsing {
+  height: 0 !important;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+/* @media (max-width: 991.98px) {
+  .navbar-collapse.show {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+  }
+} */
+
 
 .overflow-hidden {
   overflow: hidden;
