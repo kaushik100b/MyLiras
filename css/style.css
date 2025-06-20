@@ -344,6 +344,10 @@ body {
   /* padding: 20px; */
 }
 
+.navbar-collapse .navbar-nav{
+  background-color: transparent;
+}
+
 
 
 .navbar-collapse.collapsing {
