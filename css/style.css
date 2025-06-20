@@ -1755,7 +1755,8 @@ vertical-align: middle;
   .hero-header {
           font-size: 35px;
         line-height: 40px;
-  }
+        width: 100%;
+    }
 
   .about-hero p {
     font-size: 16px;
