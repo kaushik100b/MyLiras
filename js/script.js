@@ -70,18 +70,20 @@ $(document).ready(function(){
 });
 
 
+  const navbarCollapse = document.querySelector('.navbar-collapse');
 
-const navbarCollapse = document.querySelector('.navbar-collapse');
-
-  // Add Bootstrap events
+  // Animate opening
   navbarCollapse.addEventListener('show.bs.collapse', function () {
     const height = navbarCollapse.scrollHeight;
+
     navbarCollapse.classList.add('navbar-collapsing');
     navbarCollapse.style.height = '0px';
 
-    requestAnimationFrame(() => {
-      navbarCollapse.style.height = height + 'px';
-    });
+    // Trigger reflow to ensure the starting height is applied
+    navbarCollapse.offsetHeight;
+
+    // Then animate to full height
+    navbarCollapse.style.height = height + 'px';
   });
 
   navbarCollapse.addEventListener('shown.bs.collapse', function () {
@@ -89,12 +91,16 @@ const navbarCollapse = document.querySelector('.navbar-collapse');
     navbarCollapse.style.height = 'auto';
   });
 
+  // Animate closing
   navbarCollapse.addEventListener('hide.bs.collapse', function () {
     const height = navbarCollapse.scrollHeight;
+
     navbarCollapse.style.height = height + 'px';
-    navbarCollapse.offsetHeight; // force reflow
+    navbarCollapse.offsetHeight; // trigger reflow
+
     navbarCollapse.classList.add('navbar-collapsing');
 
+    // Then collapse to 0
     requestAnimationFrame(() => {
       navbarCollapse.style.height = '0px';
     });
@@ -104,8 +110,6 @@ const navbarCollapse = document.querySelector('.navbar-collapse');
     navbarCollapse.classList.remove('navbar-collapsing');
     navbarCollapse.style.height = '';
   });
-
-
 
 // const navbarCollapse = document.querySelector('.navbar-collapse');
 
