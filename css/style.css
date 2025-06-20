@@ -2232,17 +2232,27 @@ vertical-align: middle;
     height: auto;
   }
 }
-
+/* ===== iPhone 14 Pro Max (430px width) ===== */
+@media (min-width: 425px) and (max-width: 440px) {
+  .info-outer {
+    margin-left: 0.5rem !important; /* mx-2 equivalent in Bootstrap = 0.5rem */
+    margin-right: 0.5rem !important;
+  }
+}
 
 /* ===== Small Mobiles (320px - 480px) ===== */
+
 @media (min-width: 320px) and (max-width: 480px) {
   .info-box {
-    padding: 15px !important;
+    padding: 16px !important;
+            display: flex;
+        flex-direction: column;
+        justify-content: space-between;
   }
 
   .info-text {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .help-text h4,
